@@ -1,0 +1,198 @@
+.tfDetailsContent {
+  height: 70vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+
+.titleTransfer {
+  /* padding: 30px; */
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 0px !important;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a3d42;
+}
+
+.cardContact {
+    margin: -100px 2.5px 0px 2.5px;
+    width: 100%;
+    height: 110px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+}
+  
+
+.imageProfile {
+  border-radius: 12px;
+}
+
+.nameProfileNav {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 31px;
+  color: #3a3d42;
+}
+
+.detailsTransaction {
+    margin-top: -80px;
+    margin-left: 20px;
+}
+
+.noteDetails {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A7886;
+}
+
+.formNominal {
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputNominal {
+    border: none;
+    height: 60px;
+    text-align: center;    
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    color: #6379F4 !important;
+}
+
+.inputNominal:focus {
+    border: none !important;
+}
+
+.inputNominal::placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color: #B5BDCC;
+}
+
+.inputNominal[type=number]::-webkit-inner-spin-button, 
+.inputNominal[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.inputNote {
+    width: 345px;
+    margin: auto;
+    border: none;
+    
+}
+
+.borderNote {
+    width: 345px;
+    margin: auto;
+    border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+}
+
+.iconNote {
+    color: rgba(169, 169, 169, 0.6);
+    margin-top: -30px;
+    margin-left: -210px;
+}
+
+.available {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3A3D42;
+}
+
+.divBtn {
+    text-align: end;
+    margin-left: 150px;
+}
+
+.btnTf {
+    margin-bottom: -120px;
+    width: 170px;
+    height: 57px;
+    background: #6379F4;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btnTf:hover {
+    color: #ffffff;
+}
+
+.modalContent .modal-content {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 25px;
+    border: none !important;
+}
+
+.titleModal {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px ;
+    line-height: 25px;
+    color: #3A3D42;
+}
+
+.modalHeader {
+    display: flex;
+    align-items: center;
+}
+
+.modalHeader button {
+    background: none;
+    border: none;
+}
+
+.modalHeader button span {
+    font-size: 28px;
+}
+
+.noteModal {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(58, 61, 66, 0.6);
+}
+
+.btnModal {
+    width: 170px;
+    height: 57px;
+    background: #6379F4;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btnModal:hover {
+    background: #6379F4;
+    color: #ffffff;
+}

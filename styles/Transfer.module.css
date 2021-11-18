@@ -1,0 +1,89 @@
+.transfer{
+    position: relative;
+}
+.titleReceiver{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.receiverForm{
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    border-radius: 0.3rem;
+}
+.receiverSearch{
+    background-color: #EBECEC;
+    border-radius: 0.5rem;
+}
+.iconSearchBox{
+    width: 5%;
+    /* border: 1px solid green; */
+}
+.iconSearch{
+    font-size: 1.5rem !important;
+    text-align: center;
+    /* color: red; */
+}
+.inputForm{
+    width: 95%;
+    border: none;
+    background-color: transparent;
+}
+.listContact{
+    height: 30rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.contact{
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+.profileContact{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 10px;
+    /* border: 1px solid green; */
+    object-fit: cover;
+    position: relative;
+}
+.profileImage{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.transferMoney{
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+}
+
+.inputTransferAmount{
+    font-size: 2rem !important;
+    text-align: center;
+    border: none !important;
+}
+.buttonAmount{
+    background-color: #7E98DF;
+    border-radius: 0.3rem;
+}
+.modal{
+    border-radius: 2rem;
+}
+.pinBox {
+    width: 3rem;
+    height: 4rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 0.6rem;
+    margin-right: 1.7rem;
+}

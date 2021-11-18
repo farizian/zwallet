@@ -1,0 +1,422 @@
+.container{
+  padding: 0 10%;
+  font-family: Nunito Sans;
+}
+.boxes{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 25px;
+  background-color: white;
+  padding: 3%;
+  margin-top: 50px;
+}
+.transbox{
+  width: 100%;
+  height: 470px;
+  box-shadow: 0px 4px 20px 0px #0000000D;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.transbox::-webkit-scrollbar {
+  display: none;
+}
+.transbox2{
+  height: 678px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 25px;
+  background-color: white;
+  padding: 5%;
+  box-shadow: 0px 4px 20px 0px #0000000D;
+}
+.srctxt{
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.iconSearch{
+  width: 10%;
+}
+.inputsrc{
+  width: 90%;
+  border: none;
+  background: transparent;
+}
+.searchbox{
+  height: 54px;
+  border-radius: 12px;
+  background-color: #27292c1a;
+}
+.transbox p{
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.transbox2 p{
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.carduser{
+  align-items: center;
+  padding: 2%;
+  height: 110px;
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px 0px #0000000D;
+}
+.carduser img{
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.textbox{
+  width: 50%;
+  margin: 0 10px;
+}
+.textbox h2{
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+.textbox p{
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 5px 0 0 0;
+}
+.pbox{
+  width: 100%;
+}
+.pbox p{
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  width: 50%;
+}
+.inputbox{
+  width: 100%;
+  margin-top: 40px;
+}
+.num{
+  text-align: center;
+  width: auto;
+  height: 56px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  color: #6379F4;
+}
+.num:target{
+  border: none;
+}
+.notebox{
+  display: flex;
+  align-items: center;
+  width: 343px;
+  border-bottom: 1.5px solid #A9A9A999;
+  margin-top: 50px;
+}
+.notes{
+  width: unset;
+  height: unset;
+  border: none;
+  width: 90%;
+  margin-left: 20px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: transparent;
+}
+.btnbox{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-top: 60px;
+}
+.btnbox button{
+  height: 57px;
+  width: 170px;
+  border-radius: 12px;
+  border: none;
+  font-family: Nunito Sans;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #6379F4;
+}
+.btnbox button:hover{
+  background-color: #5568d3;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+}
+
+.modalHeader button {
+  background: none;
+  border: none;
+}
+
+.modalHeader button span {
+  font-size: 28px;
+}
+
+.noteModal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(58, 61, 66, 0.6);
+}
+
+.btnModal {
+  width: 170px;
+  height: 57px;
+  background: #6379F4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btnModal:hover {
+  background: #6379F4;
+  color: #ffffff;
+}
+@media (max-width: 576px) {
+  .container{
+    padding: 0;
+    font-family: Nunito Sans;
+  }
+  .boxes{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    background-color: white;
+    padding: 0;
+    margin-top: 0;
+  }
+  .src{
+    align-items: center !important;
+  }
+  .transbox{
+    width: 80%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 20px 0px #0000000D;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .transbox::-webkit-scrollbar {
+    display: none;
+  }
+  .boxes2{
+    justify-content: center !important;
+    padding: 0 3%;
+  }
+  .transbox2{
+    height: 678px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    background-color: white;
+    padding: 2%;
+    box-shadow: 0px 4px 20px 0px #0000000D;
+  }
+  .srctxtbox{
+    width: 80%;
+  }
+  .srctxt{
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .iconSearch{
+    width: 10%;
+  }
+  .inputsrc{
+    width: 90%;
+    border: none;
+    background: transparent;
+  }
+  .searchbox{
+    width: 80%;
+  }
+  .transbox p{
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .transbox2 p{
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    width: 90%;
+    display: flex;
+    justify-content: start;
+  }
+  .carduser{
+    align-items: center;
+    padding: 2%;
+    height: 110px;
+    width: 90%;
+    background-color: rgb(236, 234, 234);
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 0px #0000000D;
+  }
+  .carduser img{
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  .textbox{
+    width: 50%;
+    margin: 0 10px;
+  }
+  .textbox h2{
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+  }
+  .textbox p{
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+  }
+  .pbox{
+    width: 90%;
+  }
+  .pbox p{
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 95%;
+  }
+  .inputbox{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .num{
+    text-align: center;
+    width: 90%;
+    height: 56px;
+    margin-bottom: 30px;
+    color: #6379F4;
+  }
+  .num:target{
+    border: none;
+  }
+  .notebox{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1.5px solid #A9A9A999;
+    margin-top: 50px;
+  }
+  .notes{
+    width: unset;
+    height: unset;
+    border: none;
+    width: 90%;
+    margin-left: 20px;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+  }
+  .btnbox{
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    margin-top: 60px;
+  }
+  .btnbox button{
+    height: 57px;
+    width: 170px;
+    border-radius: 12px;
+    border: none;
+    font-family: Nunito Sans;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    background-color: #6379F4;
+  }
+  .btnbox button:hover{
+    background-color: #5568d3;
+  }
+  
+  .modalHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .modalHeader button {
+    background: none;
+    border: none;
+  }
+  
+  .modalHeader button span {
+    font-size: 28px;
+  }
+  
+  .noteModal {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(58, 61, 66, 0.6);
+  }
+  
+  .btnModal {
+    width: 170px;
+    height: 57px;
+    background: #6379F4;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none;
+  }
+  
+  .btnModal:hover {
+    background: #6379F4;
+    color: #ffffff;
+  }
+}

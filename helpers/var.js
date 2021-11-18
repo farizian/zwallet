@@ -1,0 +1,17 @@
+// user
+export const getAllUser = 'GET_ALL_USER_FULFILLED'
+export const getAllUserPending = 'GET_ALL_USER_PENDING'
+export const getAllUserError = 'GET_ALL_USER_REJECTED'
+export const getDetailUser = 'GET_DETAIL_USER_FULFILLED'
+export const getDetailUserPending = 'GET_DETAIL_USER_PENDING'
+export const getDetailUserError = 'GET_DETAIL_USER_REJECTED'
+export const getMyDetailUser = 'GET_MYDETAIL_USER_FULFILLED'
+export const getMyDetailUserPending = 'GET_MYDETAIL_USER_PENDING'
+export const getMyDetailUserError = 'GET_MYDETAIL_USER_REJECTED'
+//message
+export const getHistoryMsg = 'GET_HISTORY_FULFILLED'
+export const getHistoryMsgPending = 'GET_HISTORY_PENDING'
+export const getHistoryMsgError = 'GET_HISTORY_REJECTED'
+export const getListMsg = 'GET_LIST_MSG_FULFILLED'
+export const getListMsgPending = 'GET_LIST_MSG_PENDING'
+export const getListMsgError = 'GET_LIST_MSG_REJECTED'

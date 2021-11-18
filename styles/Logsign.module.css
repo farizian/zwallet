@@ -1,0 +1,46 @@
+.asd{
+  background-image: url('../public/Group.png');
+  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+    padding-top: 55px;
+    padding-left: 11%;
+}
+.sec{
+  height: 140vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.zimg{
+  cursor: pointer;
+  background-color: #6379F4;
+}
+@media screen and (max-width: 576px) {
+    .asd{
+        display: none;
+    }
+    .lgn{
+        width: 100%;
+    }
+    .lgn .formlgn .header{
+      padding: 0;
+    }
+    .lgn .formlgn .signbox{
+      width: 100%;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+    .logolgn{
+      width: 100%;
+      padding: 0 16px;
+      margin: 30px 0;
+      display: flex;
+    }
+    .lgn .buttonlgn .btn{
+      width: 100%;
+      padding: 0 20px;
+    }
+}
+

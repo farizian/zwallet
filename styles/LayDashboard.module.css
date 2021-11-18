@@ -1,0 +1,31 @@
+.bgDashboard{
+    background-color: #FAFCFF;
+}
+.borderMenu{
+    border-radius: 1rem;
+    width: 80%;
+}
+.linkActive{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: bold;
+    margin-bottom: 2rem;
+    color: #6379F4;
+    cursor: pointer;
+    border-left: 0.3rem solid #6379F4;
+}
+.link{
+    margin-bottom: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: bold;
+    cursor: pointer;
+}
+.menuIcon {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+.logOut{
+    height: 10rem;
+    /* background-color: #6379F4; */
+}

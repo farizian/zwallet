@@ -1,0 +1,222 @@
+.content {
+  height: 100vh;
+  padding: 50px;
+}
+
+.sidebar {
+  /* position: fixed; */
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  width: 70%;
+  height: 110vh;
+  padding: 50px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+.navItem {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 31px;
+  color: rgba(58, 61, 66, 0.8);
+  cursor: pointer;
+}
+
+.navItemLogout {
+  margin-top: 570px !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 31px;
+  color: rgba(58, 61, 66, 0.8);
+  cursor: pointer;
+}
+
+.successContent {
+  height: 110vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+
+.titleSuccess {
+  width: 70px;
+  height: 70px;
+  background-color: #1ec15f;
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.noteSuccess {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #4d4b57;
+}
+
+.imageProfileReceiver {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 12px;
+}
+
+/* .infoReceiver {
+  
+} */
+
+.nameProfileNav {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a3d42;
+}
+
+.statusTrans {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7a7886;
+  margin-top: 20px;
+}
+
+.iconProfileNav {
+  color: #4d4b57;
+}
+
+.infoContent {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.infobox{
+  height: 470px;
+  padding-bottom: 10px;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.infobox::-webkit-scrollbar {
+  display: none;
+}
+.cardContact {
+  width: 95%;
+  height: 100px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.233);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.titleCardInfo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7a7886;
+}
+
+.bodyCardInfo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #514f5b;
+  margin-top: -10px;
+}
+
+.titleTfto {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #514f5b;
+  margin-left: 40px;
+}
+
+.cardContactReceiver {
+  width: 95%;
+  height: 100px;
+  background: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.233);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.packHead {
+  height: 100px;
+}
+
+.footerSuccess {
+  position: relative;
+  margin-top: 250px;
+}
+
+.btnShare {
+  width: 60px;
+  height: 60px;
+  background: rgba(99, 121, 244, 0.15);
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #000;
+  border: none;
+}
+
+.btnDwld,
+.backToHome {
+  width: 243px;
+  height: 60px;
+  background: rgba(99, 121, 244, 0.15);
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6379f4;
+}
+
+.btnShare:hover,
+.btnDwld:hover,
+.backToHome:hover {
+  background: #6379f4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  .successContent {
+    margin: 0;
+    height: 120vh !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .statusTrans {
+    line-height: 0px;
+  }
+
+  .btnShare {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .btnDwld,
+  .backToHome {
+    width: 100% !important;
+    height: 60px;
+  }
+}

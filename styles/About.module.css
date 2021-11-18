@@ -1,0 +1,9 @@
+.data{
+  height: 100vh;
+  cursor: pointer;
+}
+.data p{
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+}

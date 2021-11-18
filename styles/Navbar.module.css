@@ -1,0 +1,97 @@
+.nav{
+    font-family: Nunito Sans;
+    height: 100px;
+    background-color: transparent;
+}
+.nav2{
+    font-family: Nunito Sans;
+    padding: 0 10%;
+    height: 100px;
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0px 4px 20px 0px #0000000D;
+}
+.zimg{
+    cursor: pointer;
+}
+.h1{
+    font-family: Nunito Sans;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6379F4;
+    cursor: pointer;
+}
+.navbarLeft{
+    display: flex;
+    align-items: center;
+}
+.textbox{
+    margin: 0 20px;
+}
+.textbox h3{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+    margin: 0;
+}
+.textbox p{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+.textDark{
+    text-overflow: none;
+    text-decoration: none;
+}
+.btnlogin{
+    height: 59px;
+    width: 120px;
+    border-radius: 12px;
+    background-color: #6379F4;
+    border: 2px solid #ebe9e9;
+    margin-right: 30px;
+}
+.btnlogin:hover{
+    background-color: #4c5dbd;
+}
+.btnsignup{
+    height: 59px;
+    width: 120px;
+    border-radius: 12px;
+    background-color: white;
+    color: #6379F4;
+}
+.btnsignup:hover{
+    background-color: rgb(209, 206, 206);
+}
+@media screen and (max-width:576px) {
+    .btnlogin{
+        margin-top: 20px !important;
+        font-size: 14px !important;
+        margin-left: 40px;
+    }
+    .btnsignup{
+        margin-top: 20px !important;
+        font-size: 14px !important;
+    }
+    .navLogo{
+        display: block;
+        margin: 0 auto;
+    }
+    .homeMenu{
+        display: none;
+    }
+    .navUpper{
+        display: none !important;
+    }
+    .navbarBottom{
+        background: transparent !important;
+    }
+}

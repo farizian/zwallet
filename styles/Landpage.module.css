@@ -1,0 +1,335 @@
+/* jumbotron */
+.titleApps {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 40px;
+  color: #6379F4;
+}
+.titleLanding {
+  cursor: pointer;
+}
+
+.jumbotronPack {
+  margin-top: 110px;
+}
+
+.jumbotronTitle {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 93px;
+  color: #3A3D42;
+}
+
+.timeTitle {
+  color: #6379F4;
+}
+
+.jumbotronNote {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  color: #3A3D42;
+}
+
+.jumbotronBtn {
+  width: 173px;
+  height: 57px;
+  background: #6379F4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.jumbotronBtn:hover {
+  color: #FFFFFF;
+}
+
+.jumbotronRight {
+  background-image: url('https://i.ibb.co/tbTTvs5/Mask-Group.png');
+  background-size: cover;
+  border-radius: 0px 0px 0px 250px;
+}
+
+.btnGroup {
+  margin-right: 100px !important;
+}
+
+.btnLogin {
+  width: 120px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.btnLogin:hover {
+  color: #FFFFFF;
+}
+
+.btnSignUp {
+  width: 120px;
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #6379F4;
+}
+
+.btnSignUp:hover {
+  color: #6379F4;
+}
+
+.sample {
+  margin-top: 90px !important;
+  margin-left: 150px !important;
+}
+
+/*  */
+
+/* About Apps */
+
+.aboutCompany {
+  margin-top: 430px;
+  padding-bottom: 100px;
+  background: rgba(71, 58, 209, 0.06);
+}
+
+.packTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.titleAbout {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 93px;
+  color: #6379F4;
+}
+.noteAbout {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  color: #3A3D42;
+  width: 60%;
+}
+
+.aboutApps {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutSupport {
+  width: 367px;
+  height: 344px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+
+.iconRounded {
+  width: 60px;
+  height: 60px;
+  background: rgba(71, 58, 209, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  color: #6379F4;
+}
+
+.titleSupport {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #3A3D42;
+}
+
+.noteSupport {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: center;
+  color: rgba(58, 61, 66, 0.9);
+}
+
+/* Partner */
+
+.partner{
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.titlePartner{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 93px;
+  color: #3A3D42;
+}
+
+.imgPartner {
+  filter: grayscale(100%);
+}
+
+.footerApps {
+  padding: 80px;
+  background: #6379F4;
+}
+
+.titleFoot {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #FFFFFF;
+}
+
+.noteFoot {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  color: rgba(239, 239, 239, 0.75);
+}
+
+@media screen and (max-width: 768px) {
+  /* jumbotron */
+  .titleApps {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 40px;
+    color: #6379F4;
+  }
+  
+  .jumbotronPack {
+    margin-top: 50px;
+  }
+  
+  .jumbotronTitle,
+  .titlePartner {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 70px;
+    color: #3A3D42;
+  }
+
+  .btnGroupSm {
+    margin-right: 0px !important;
+  }
+
+  .btnLoginSm {
+    width: 100px;
+    height: 48px;
+    background-color: #6379F4;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .btnLogin:hover {
+    color: #FFFFFF;
+  }
+  
+  .btnSignUpSm {
+    width: 100px;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #6379F4;
+  }
+  
+  .btnSignUp:hover {
+    color: #6379F4;
+  }
+
+  .btnDbr {
+    width: 125px;
+    height: 48px;
+    background-color: #6379F4;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .btnDbr:hover {
+    color: #FFFFFF;
+  }
+  
+  .jumbotronBtn {
+    margin-top: 30px;
+  }
+  
+  .jumbotronRight {
+    display: none;
+  }
+  /*  */
+
+  /* About Apps */
+  .aboutCompany {
+    display: none !important;
+    margin-top: 50px;
+    background: rgba(71, 58, 209, 0.06);
+  }
+
+  .partner{
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  .footerApps {
+    padding: 20px;
+    height: 40vh;
+  }
+
+  .titleFoot {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .noteFoot {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,114 @@
+.historyContent {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  margin-left: 2.3%;
+  border-radius: 25px;
+}
+
+.titleHistory {
+  padding: 30px;
+  margin-bottom: 0px !important;
+}
+
+.btnFilter {
+  width: 155px;
+  height: 40px;
+  background: rgba(58, 61, 66, 0.1);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.imageProfile {
+  border-radius: 12px;
+}
+
+.nameProfileNav {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 31px;
+  color: #3a3d42;
+}
+
+.packEditImg {
+  height: 50px !important;
+  text-align: center;
+}
+
+.btnEdit {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 56px;
+    color: #9EA0A5 !important;
+}
+  
+.statusTrans {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #7a7886;
+}
+
+.iconProfileNav {
+  color: #4d4b57;
+}
+
+.infoContent {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardProfile {
+  width: 50%;
+  height: 70px;
+  background: #E5E8ED;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #4D4B57;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .historyContent{
+    width: 100%;
+    margin: 0;
+    border-radius: 35px 35px 0 0;
+  }
+  .cardProfile {
+    width: 80%;
+    height: 70px;
+    background: #E5E8ED;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #4D4B57;
+    cursor: pointer;
+  }
+  .bodyCardInfo{
+    margin: 0;
+  }
+  .noProced{
+    margin: 0;
+  }
+}

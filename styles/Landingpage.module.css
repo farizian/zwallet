@@ -1,0 +1,325 @@
+.openSans{
+    font-family: Nunito Sans;
+}
+.divHeight{
+    height: 300px;
+   padding-top: 300px;
+}
+.back{
+    background-image: url('../public/landingbg.png');
+}
+.imgbox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+}
+.taglineTittle{
+    width: 400px;
+    font-size: 40px;
+    line-height: 50px;
+}
+.taglineSubTittle{
+    width: 400px;
+}
+.buttonTagline{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    width: 150px;
+    background-color: white;
+    color: #6379F4;
+}
+.imageTagline{
+    padding-left: 150px;
+}
+.graySquare{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transform: rotate(75deg);
+    background-color: #E2E5ED;
+    z-index: 10;
+}
+.imageLanding{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    z-index: 100;
+}
+.imageLanding img{
+    height: 300px;
+    width: auto;
+}
+.purpleSquare{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 150;
+    top: 240px;
+    left: -20px;
+}
+.yellowSquare{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 200;
+    top: 290px;
+    left: 40px;
+}
+
+
+
+.benefitGraySquare{
+    width: 420px;
+    height: 300px;
+    z-index: 10;
+    transform: rotate(10deg);
+}
+.benefitImage{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 100;
+}
+.benefitPurpleSquare{
+    width: 50px;
+    height: 50px;
+    z-index: 150;
+    top: -20px;
+    left: -20px;
+}
+
+.skillGraySquare{
+    width: 500px;
+    height: 300px;
+    z-index: 10;
+    transform: rotate(170deg);
+}
+.skillImage {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 100;
+}
+.skillYellowSquare{
+    width: 70px;
+    height: 70px;
+    z-index: 150;
+    top: -30px;
+    left: 460px;
+}
+
+
+.spanLanding {
+    font-weight: bold;
+    color: #E2E5ED;
+    padding: 2px 6px;
+    border-radius: 100%;
+    margin-right: 10px;
+    /* background-color: #5E50A1; */
+}
+
+.liLanding{
+    padding-top: 20px;
+    background-clip: content-box;
+}
+
+
+.carousel{
+    /* background-color: #FBB017 !important; */
+    padding: 40px;
+}
+.commentCard{
+    /* width: 200px !important; */
+    height: 350px !important;
+    background-color: white !important;
+    padding: 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px; */
+    box-shadow: 0px 8px 16px rgba(197, 197, 197, 0.25) !important;
+}
+.imageComment{
+    width: 100px !important;
+    height: 100px !important;
+    border: 5px solid #FBB017;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+.imageComment img{
+    width: auto;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.commentName{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.commentJob{
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #9EA0A5 !important;
+}
+.commentText{
+    font-size: 12px;
+    text-align: center;
+    width: 150px;
+    margin-bottom: 0px !important;
+}
+
+.slick-prev:before {
+    color:#5E50A1;
+    font-size: 40px;
+}
+
+.slick-next:before {
+    color: #5E50A1;
+    font-size: 40px;
+}
+
+.cardPromo{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+}
+.cardPromoTittle{
+    width: 250px;
+    line-height: 40px;
+    font-size: 25px;
+}
+.buttonPromo{
+    font-size: 14px;
+}
+
+
+
+.border{
+    border: 10px solid ;
+}
+
+.fs12{
+    font-size: 12px !important;
+}
+.fs14{
+    font-size: 14px !important;
+}
+
+.bgYellow{
+    background-color: #FBB017;
+}
+.bgPurple{
+    background-color: #5E50A1 !important;
+}
+.bgGray{
+    background-color: #E2E5ED;
+}
+
+.fs30{
+    font-size: 30px;
+}
+.marginTop {
+    margin-top: 120px;
+}
+.marginBottom{
+    margin-bottom: 120px;
+}
+.textPurple{
+    color: #6c6492 !important;
+}
+
+@media screen and (max-width:576px) {
+    .taglineTittle{
+        font-size: 35px;
+        width: 100%;
+        line-height: 50px;
+    }
+    .taglineSubTittle{
+        font-size: 25px;
+        width: 100%;
+    }
+    .buttonTagline{
+        width: 150px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .imageTagline{
+        display: none;
+    }
+    .imageBenefit{
+        padding-top: 40px;
+        /* border: 1px solid green; */
+    }
+    .benefitGraySquare {
+        width: 340px;
+        height: 200px;
+    }
+    .benefitImage{
+        width: 350px;
+        height: 200px;
+        object-position: center;
+    }
+    .benefitPurpleSquare{
+        display: none;
+    }
+    .benefitTittle {
+        width: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .benefitlist {
+        text-align: center;
+        /* margin-bottom: 30px; */
+    }
+    .skillTittle{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .skillSubtittle{
+        width: 100%;
+        text-align: center;
+    }
+    .skillImage{
+        display: none;
+    }
+    .cardTittle{
+        font-size: 18px;
+        width: 150px;
+        line-height: 30px;
+    }
+    .cardPromoTittle{
+        font-size: 25px;
+        width: 200px;
+    }
+
+    .marginTop{
+        margin-top: 40px;
+    }
+    .slick-prev {
+        left: -5px;
+    }
+    .slick-next {
+        right: 12px;
+    }
+    .buttonPromo{
+        font-size: 10px !important;
+    }
+
+
+
+}

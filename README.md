@@ -69,7 +69,7 @@ built with nextJs, and Redux on the front end, and ExpressJs, NodeJs, and sequel
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/farizian/chatting
+   git clone https://github.com/farizian/zwallet
    ```
 2. Install NPM packages
    ```sh
@@ -107,6 +107,11 @@ Register           |  Register Mobile
 Login           |  Login Mobile
 :-------------------------:|:-------------------------:
 ![](ss/login.png)  |  ![](ss/mobile/login.png)
+
+
+Input Pin           |  Input Pin Mobile
+:-------------------------:|:-------------------------:
+![](ss/pin.png)  |  ![](ss/mobile/pin.png)
 
 
 User Transfer           |  User Transfer Mobile

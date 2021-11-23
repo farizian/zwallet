@@ -97,25 +97,21 @@ const Sign = ({sign, id}) => {
 
   // pin
   const [errPin, setErrPin] = useState("")
-  const [pin, setPin] = useState("");
-  const handlePin = (value) => {
-    if(isNaN(value)) return false;
-    setPin(value)
-  }
+  const [pin, setPin] = useState({
+    pin:""
+  });
   const submitPin=(e)=>{
     e.preventDefault();
-    const pin = {
-      pin: pin
-    }
     console.log(pin.pin)
-    if(pin.pin === ""){
+    const idpin = localStorage.getItem('idsign')
+    console.log(idpin)
+    if(!pin.pin || pin.pin === ""){
       setErrPin("data harus diisi")
     } else {
       return new Promise((resolve, reject)=>{
-        axios.put(`${API_URL}userpin/${id}`, pin)
+        axios.put(`${API_URL}regispin/${idpin}`, pin)
         .then((response)=>{
-          resolve(response.data.result)
-          console.log(response.data.result)
+          alert(response.data.message)
           Router.push('/login')
         }).catch((err)=>{
           setErrPin(err.response.data.error)
@@ -237,7 +233,8 @@ const Sign = ({sign, id}) => {
                     focus
                     secret
                     type="text"
-                    onChange={handlePin}
+                    value={pin}
+                    onChange={(e)=>setPin({pin: e})}
                   />
                 
               </div>

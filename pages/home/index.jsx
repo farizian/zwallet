@@ -17,23 +17,26 @@ import down from '../../public/down.svg'
 import up from '../../public/up.svg'
 import CurrencyFormat from 'react-currency-format'
 import { Bar } from 'react-chartjs-2';
+import moment from 'moment'
 
 
 const Home = () => {
   const [user, setUser] = useState({})
   const [history, setHistory] = useState([])
-  const [income, setIncome] = useState([])
-  const [spend, setSpend] = useState([])
+  const [income, setIncome] = useState("")
+  const [spend, setSpend] = useState("")
+  const [labels, setLabels] = useState([])
+  const [total, setTotal] = useState([])
   
 
   const data = {
-    labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+    labels: labels,
     datasets: [
         {
         label: '# of Votes',
-        data: [12000, 19000, 3000, 5000, 2000, 3000, 4000],
+        data: total,
         backgroundColor: [
-            '#6379F4',
+          '#6379F4',
         ],
 
         borderWidth: 0.3,
@@ -114,17 +117,22 @@ const Home = () => {
       console.log(err)
     })
     getTrans(token).then(result => {
+      var date = result.map((e) => moment(`${e.created_at}`).format("ddd"))
       setHistory(result)
+      setTotal(result.map((e)=> e.amount))
+      setLabels(date)
     }).catch(err => {
       console.log(err)
     })
     getIncome(token).then(result => {
-      setIncome(result)
+      let join = result.reduce((a, e)=> a + e.amount,0)
+      setIncome(join)
     }).catch(err => {
       console.log(err)
     })
     getSpend(token).then(result => {
-      setSpend(result)
+      let join = result.reduce((a, e)=> a + e.amount,0)
+      setSpend(join)
     }).catch(err => {
       console.log(err)
     })
@@ -134,7 +142,9 @@ const Home = () => {
     
   }, [history])
 
-  console.log(history)
+  console.log(total)
+  console.log(labels)
+
   return(
     <>
       <Layout>
@@ -170,18 +180,17 @@ const Home = () => {
                   <div className={`d-lg-flex d-none flex-column align-items-center justify-content-center ${styles.chart}`}>
                     <Row className="w-100">
                       <Col lg="6" xs="6" className="ps-5">
-                        
-                          <Image src={down} alt="" />
-                          <div>Income</div>
-                          <bold>Rp.12.123.123</bold>
+                        <Image src={down} alt="" />
+                        <div>Income</div>
+                        <CurrencyFormat className={`fs-20`} value={income} displayType={'text'} thousandSeparator={true} hunderedSeparator={true} prefix={'Rp. '}/>
                       </Col>
                       <Col lg="6" xs="6" className="ps-5">
-                          <Image src={up} alt="" />
-                          <div>Expense</div>
-                          <bold>Rp.12.123.123</bold>
+                        <Image src={up} alt="" />
+                        <div>Expense</div>
+                        <CurrencyFormat className={`fs-20`} value={spend} displayType={'text'} thousandSeparator={true} hunderedSeparator={true} prefix={'Rp. '}/>
                       </Col>
                       <Col lg="12">
-                          <Bar className="mt-4 pointer" data={data} options={options} />
+                        <Bar className="mt-4 pointer" data={data}  />
                       </Col>
                     </Row>
                   </div>

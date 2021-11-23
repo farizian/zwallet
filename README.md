@@ -41,7 +41,7 @@ for backend repository click [this](https://github.com/farizian/chatting_BE)
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Screenshot](ss/chat.png)
+![Screenshot](ss/home.png)
 
 
 

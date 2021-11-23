@@ -1,17 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/link-passhref */
 import React, { useEffect, useState } from "react"
-import { Container, Row, Col, Nav } from "reactstrap"
+import { Container, Row, Col, Nav, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap"
 import { API_URL } from "../helpers/env"
 import styles from "../styles/Navbar.module.css"
 import { BsBell, BsEnvelope, BsHouseDoor, BsSearch, BsPerson } from "react-icons/bs";
+import { AiOutlineArrowUp, AiOutlineArrowDown } from 'react-icons/ai'
 import Link from 'next/link';
 import Router from 'next/router'
 import Image from "next/dist/client/image";
+import CurrencyFormat from 'react-currency-format'
 import axios from "axios";
 
 
 const Navbar=({data})=>{
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const toggle = () => setDropdownOpen(prevState => !prevState);
+  
+  const getTrans = (token) => {
+    const headers = {
+      token: token
+    }
+    return new Promise((resolve, reject) => {
+      axios.get(`${API_URL}transaction`, {headers} )
+      .then((response) => {
+        resolve(response.data.result);
+      }).catch((err) => {
+        reject(err)
+      })
+    })
+  }
   const getMyData = (token) => {
     const headers = {
       token: token
@@ -26,12 +44,18 @@ const Navbar=({data})=>{
       })
     })
   }
+  const [history, setHistory] = useState([])
   const [user, setUser] = useState({})
   useEffect(() => {
     const token = localStorage.getItem('token')
     getMyData(token).then(result => {
       console.log(result)
       setUser(result)
+    }).catch(err => {
+      console.log(err)
+    })
+    getTrans(token).then(result => {
+      setHistory(result)
     }).catch(err => {
       console.log(err)
     })
@@ -43,6 +67,9 @@ const Navbar=({data})=>{
 
   const toDash = () => {
     Router.push("/home");
+  };
+  const toHistory = () => {
+    Router.push("/history");
   };
   return (
     <>
@@ -84,7 +111,34 @@ const Navbar=({data})=>{
                   <h3>{`${user.firstname} ${user.lastname}`}</h3>
                   <p>+62 {user.phone}</p>
                 </div>
-                <Image src="/bell.png" width="24px" height="24px" alt=""/>
+                <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+                  <DropdownToggle className="mt-lg-2"
+                  style={{backgroundColor:'transparent', border:'none'}}>
+                    <Image src="/bell.png" width="24px" height="24px" alt=""/>
+                  </DropdownToggle>
+                  <DropdownMenu right className={`mt-lg-4 py-lg-4 ${styles.dropmenu}`}>
+                    <div className={`px-lg-4 ${styles.dropmenubox}`}>
+                    {history.map((e, i) => {
+                      return(
+                        <div key={i} className={`row p-2 d-flex ${styles.rowhist}`}>
+                          <div className={`d-flex w-100 align-items-center`}>
+                            {user.id !== e.receiver?<AiOutlineArrowUp color="red" style={{fontSize:'30px', marginRight:'10px'}}/>:<AiOutlineArrowDown color="green" style={{fontSize:'30px', marginRight:'10px'}}/>}
+                            <div className={`d-flex flex-column ${styles.fontbox}`}>
+                              <p>
+                                {e.notes==='Top Up'?`${e.notes} ZWallet`
+                                :e.notes==='Transfer'?`${e.notes} to ${e.receiverUsers.firstname} ${e.receiverUsers.lastname}`
+                                :`${e.notes} from ${e.senderUsers.firstname} ${e.senderUsers.lastname}`}
+                              </p>
+                              <CurrencyFormat className={`d-flex align-items-center ${styles.amount}`} value={e.amount} style={user.id === e.receiver?{color:'green'}:{color:'red'}} displayType={'text'} thousandSeparator={true} hunderedSeparator={true} prefix={'Rp.'}/>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    })}
+                    </div>
+                  </DropdownMenu>
+                </Dropdown>
+                
               </div>
             </Col>
           </Row>
@@ -102,7 +156,7 @@ const Navbar=({data})=>{
             </div>
 
             <div className="row d-flex iconNavbar flex-column  justify-content-center align-items-center">
-              <BsBell size={28} />
+              <BsBell size={28} onClick={toHistory}/>
             </div>
 
             <div className="row d-flex iconNavbar flex-column  justify-content-center align-items-center">

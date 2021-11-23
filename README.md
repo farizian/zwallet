@@ -52,6 +52,10 @@ for backend repository click [this](https://github.com/farizian/chatting_BE)
 ### Built With
 
 * [Next.js](https://nextjs.org/)
+* [React.js](https://reactjs.org/)
+* [Reactstrap](https://reactstrap.github.io/)
+* [Axios](https://www.npmjs.com/package/axios)
+* [backend](https://github.com/farizian/zwalletBE)
 * [Demo]()
 
 <p align="right">(<a href="#top">back to top</a>)</p>

@@ -3,7 +3,7 @@ import {
     Col,
     Container
   } from "reactstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from 'next/link';
 import style from '../styles/Signcomponent.module.css'
 import {AiOutlineEye, AiOutlineEyeInvisible} from "react-icons/ai"
@@ -97,9 +97,13 @@ const Sign = ({sign, id}) => {
 
   // pin
   const [errPin, setErrPin] = useState("")
+  const [mobile, setMobile] = useState("")
   const [pin, setPin] = useState({
     pin:""
   });
+  useEffect(() => {
+    setMobile(window.matchMedia("(max-width: 576px)"))
+  }, [])
   const submitPin=(e)=>{
     e.preventDefault();
     console.log(pin.pin)
@@ -227,7 +231,7 @@ const Sign = ({sign, id}) => {
                   <PinInput
                     className={style.pinbox}
                     style={{fontSize:'30px'}}
-                    inputStyle={window.matchMedia("(max-width: 576px)").matches?{borderColor: '#A9A9A999', height:'55px', width:'40px', borderRadius:'10px', marginInline: "5px"}:{borderColor: '#A9A9A999', height:'65px', width:'53px', borderRadius:'10px', marginInline: "5px"}}
+                    inputStyle={mobile.matches?{borderColor: '#A9A9A999', height:'55px', width:'40px', borderRadius:'10px', marginInline: "5px"}:{borderColor: '#A9A9A999', height:'65px', width:'53px', borderRadius:'10px', marginInline: "5px"}}
                     inputFocusStyle={{borderColor: '#A9A9A999'}}
                     length={6}
                     focus

@@ -26,6 +26,7 @@
 .inputpin{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 20px;
 }
 .pinbox{
@@ -197,6 +198,7 @@
     .inputpin{
         display: flex;
         justify-content: center;
+        padding: 0;
     }
     .bungkus{
         width: 100%;

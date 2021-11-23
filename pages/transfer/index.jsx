@@ -128,7 +128,7 @@ const Transfer = () => {
                     return(
                       <div key={i} className={`d-flex mb-4 ${styles.carduser}`}
                       onClick={()=>Router.push(`/transfer/${e.id}`)} style={{cursor:'pointer'}}>
-                        <img src={`http://localhost:8000/uploads/${e.image}`} width="70px" height="70px" alt="" />
+                        <img src={`${API_URL}uploads/${e.image}`} width="70px" height="70px" alt="" />
                         <div className={`d-flex flex-column ${styles.textbox}`}>
                           <h2>{`${e.firstname} ${e.lastname}`}</h2>
                           <p>{e.phone}</p>

@@ -43,6 +43,8 @@ for backend repository click [this](https://github.com/farizian/chatting_BE)
 
 ![Screenshot](ss/home.png)
 
+ZWallet is a digital Wallet web application built using Next.js framework with pin validation in transfer function, and topup
+built with nextJs, and Redux on the front end, and ExpressJs, NodeJs, and sequelize on the backend.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -55,38 +57,52 @@ for backend repository click [this](https://github.com/farizian/chatting_BE)
 * [React.js](https://reactjs.org/)
 * [Reactstrap](https://reactstrap.github.io/)
 * [Axios](https://www.npmjs.com/package/axios)
+* [Vercel](https://vercel.com/)
+* [Heroku](https://www.heroku.com/)
 * [backend](https://github.com/farizian/zwalletBE)
 * [Demo](https://zwallet-five.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- GETTING STARTED -->
+<div id="demo"></div>
 
+## Demo
+This is a link to the demo [ZWallet App](https://zwallet-five.vercel.app/))
+- Login user
+  ```
+  email: supri@gmail.com
+  pass: 123
+  ```
 
 <!-- GETTING STARTED -->
+<div id="getting-started"></div>
+
 ## Getting Started
 
-ZWallet is a digital Wallet web application built using Next.js framework with pin validation in transfer function, and topup
-built with nextJs, and Redux on the front end, and ExpressJs, NodeJs, and sequelize on the backend.
-
+### Prerequisites
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
 ### Installation
 
-1. Clone the repo
+1. [Clone API](https://github.com/farizian/zwalletBE)
+2. Clone the repo
    ```sh
    git clone https://github.com/farizian/zwallet
    ```
-2. Install NPM packages
+3. Install NPM packages
    ```sh
    npm install
    ```
-3. Start the Application
-   ```js
-   npm start
+4. Create your API in file `.env`
+   ```.env
+   NEXT_PUBLIC_API_URL= 'YOUR API URL'
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Screenshot

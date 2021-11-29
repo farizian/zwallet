@@ -69,7 +69,7 @@ built with nextJs, and Redux on the front end, and ExpressJs, NodeJs, and sequel
 <div id="demo"></div>
 
 ## Demo
-This is a link to the demo [ZWallet App](https://zwallet-five.vercel.app/))
+This is a link to the demo [ZWallet App](https://zwallet-five.vercel.app/)
 - Login user
   ```
   email: supri@gmail.com

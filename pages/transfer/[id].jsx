@@ -231,7 +231,7 @@ const Transdetail = () => {
                     <div>
                       <small className={`${styles.noteModal}`}>
                         Enter your 6 digits PIN for confirmation to continue
-                        transferring money.{" "}
+                        your transaction.{" "}
                       </small>
                     </div>
                     <div className={`text-center my-5`}>

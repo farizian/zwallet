@@ -206,7 +206,7 @@ const Transdetail = () => {
                     <CurrencyFormat className={styles.balance} value={myData.balance} displayType={'text'} thousandSeparator={true} hunderedSeparator={true} prefix={'Rp.'}/> Available
                   </p>
                   <div className={styles.notebox}>
-                    <Image src="/Pen.png" alt="" width="20px" height="20px"/>
+                    <Image src="/pen.png" alt="" width="20px" height="20px"/>
                     <input type="text" name="description" placeholder="Add some notes"  className={styles.notes} onChange={setInput}/>
                   </div>
                   <div className={`${styles.btnbox}`}>
